@@ -8,19 +8,31 @@
 <body>
 <header class='header'>
 <div class='container nav'>
-<a href='./index.html#inicio' class='logo' aria-label='Voltar para a pagina inicial da ONC Estaleiro'>
+<a href='./index.html#inicio' class='logo' aria-label='Voltar para a pagina inicial da ONC Estaleiro' data-i18n-aria='logoLabel'>
 <img src='./img/logo-onc.jpeg' alt='Logo ONC Estaleiro'>
 <span class='logo-copy'>
 <strong>ONC </strong>
-<small>Oliveira Navegação e Comércio</small>
+<small data-i18n='brandSubtitle'>Oliveira Navegação e Comércio</small>
 </span>
 </a>
 <nav class='menu'>
-<a href='./sobre.html'>Sobre</a>
-<a href='./index.html#servicos'>Serviços</a>
-<a href='./index.html#projetos'>Projetos</a>
-<a href='./index.html#contato'>Contato</a>
+<a href='./sobre.html' data-i18n='navAbout'>Sobre</a>
+<a href='./index.html#servicos' data-i18n='navServices'>Serviços</a>
+<a href='./index.html#projetos' data-i18n='navProjects'>Projetos</a>
+<a href='./index.html#contato' data-i18n='navContact'>Contato</a>
 </nav>
+<div class='header-actions'>
+<div class='language-picker'>
+<button class='language-button' type='button' aria-label='Trocar idioma' aria-expanded='false' aria-controls='language-options' data-language-toggle data-i18n-aria='languageButtonLabel'>
+<span data-language-current>🇧🇷 Português</span>
+</button>
+<div class='language-options' id='language-options'>
+<button type='button' data-language-option='pt-BR'>🇧🇷 Português</button>
+<button type='button' data-language-option='en'>🇺🇸 English</button>
+<button type='button' data-language-option='es'>🇪🇸 Español</button>
+</div>
+</div>
+</div>
 </div>
 </header>
 
