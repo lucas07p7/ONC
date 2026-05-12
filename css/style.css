@@ -155,6 +155,7 @@ a{text-decoration:none;color:inherit}
   position:absolute;
   top:calc(100% + 12px);
   right:0;
+  z-index:120;
   min-width:190px;
   padding:10px;
   border-radius:16px;
@@ -217,6 +218,7 @@ a{text-decoration:none;color:inherit}
   position:absolute;
   top:calc(100% + 12px);
   right:0;
+  z-index:120;
   min-width:176px;
   padding:10px;
   border-radius:16px;
@@ -1028,7 +1030,8 @@ a{text-decoration:none;color:inherit}
 
 @media (max-width:760px){
   .header{
-    position:static;
+    position:relative;
+    z-index:100;
     background:#fff;
   }
 
