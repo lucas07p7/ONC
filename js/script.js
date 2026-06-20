@@ -262,7 +262,9 @@ function applyLanguage(language) {
     option.setAttribute('aria-pressed', String(isActive));
   });
 
-  document.title = dictionary.pageTitle;
+  if (document.querySelector('[data-i18n="pageTitle"]')) {
+    document.title = dictionary.pageTitle;
+  }
   saveLanguage(selectedLanguage);
 }
 
