@@ -8,7 +8,7 @@
 <body>
 <header class='header'>
 <div class='container nav'>
-<a href='./index.html#inicio' class='logo' aria-label='Pagina inicial do Grupo ONC'>
+<a href='./index.html' class='logo' aria-label='Pagina inicial do Grupo ONC'>
 <img src='./img/logo-onc.jpeg' alt='Logo ONC'>
 <span class='logo-copy'>
 <strong>Grupo ONC</strong>
@@ -16,6 +16,16 @@
 </span>
 </a>
 <div class='header-actions'>
+<div class='language-picker'>
+<button class='language-button' type='button' aria-label='Trocar idioma' aria-expanded='false' aria-controls='language-options' data-language-toggle data-i18n-aria='languageButtonLabel'>
+<span data-language-current>🇧🇷 Português</span>
+</button>
+<div class='language-options' id='language-options'>
+<button type='button' data-language-option='pt-BR'>🇧🇷 Português</button>
+<button type='button' data-language-option='en'>🇺🇸 English</button>
+<button type='button' data-language-option='es'>🇪🇸 Español</button>
+</div>
+</div>
 <div class='quick-menu'>
 <button class='icon-menu-button' type='button' aria-label='Abrir links das frentes ONC' aria-expanded='false' aria-controls='service-links-menu' data-menu-toggle>
 <span></span>
@@ -28,16 +38,6 @@
 <a href='./mineracao-material-construcao.html'>Mineração e Material de Construção</a>
 </div>
 </div>
-<div class='language-picker'>
-<button class='language-button' type='button' aria-label='Trocar idioma' aria-expanded='false' aria-controls='language-options' data-language-toggle data-i18n-aria='languageButtonLabel'>
-<span data-language-current>🇧🇷 Português</span>
-</button>
-<div class='language-options' id='language-options'>
-<button type='button' data-language-option='pt-BR'>🇧🇷 Português</button>
-<button type='button' data-language-option='en'>🇺🇸 English</button>
-<button type='button' data-language-option='es'>🇪🇸 Español</button>
-</div>
-</div>
 </div>
 </div>
 </header>
@@ -48,6 +48,10 @@
 <span class='eyebrow'>Transporte e apoio operacional</span>
 <h1>Navegação e logística para movimentar cargas com previsibilidade na Amazônia.</h1>
 <p>Uma frente voltada a fretes, apoio fluvial, deslocamento de materiais e suporte operacional para clientes que dependem de rotas regionais bem organizadas.</p>
+<div class='hero-actions'>
+<a href='#contato' class='btn btn-primary'>Solicitar orçamento</a>
+<a href='./sobre.html' class='btn btn-secondary'>Conheça nossa história</a>
+</div>
 </div>
 </section>
 

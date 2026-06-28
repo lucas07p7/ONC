@@ -8,7 +8,7 @@
 <body>
 <header class='header'>
 <div class='container nav'>
-<a href='./index.html#inicio' class='logo' aria-label='Pagina inicial do Grupo ONC'>
+<a href='./index.html' class='logo' aria-label='Pagina inicial do Grupo ONC'>
 <img src='./img/logo-onc.jpeg' alt='Logo ONC'>
 <span class='logo-copy'>
 <strong>Grupo ONC</strong>
@@ -16,6 +16,16 @@
 </span>
 </a>
 <div class='header-actions'>
+<div class='language-picker'>
+<button class='language-button' type='button' aria-label='Trocar idioma' aria-expanded='false' aria-controls='language-options' data-language-toggle data-i18n-aria='languageButtonLabel'>
+<span data-language-current>🇧🇷 Português</span>
+</button>
+<div class='language-options' id='language-options'>
+<button type='button' data-language-option='pt-BR'>🇧🇷 Português</button>
+<button type='button' data-language-option='en'>🇺🇸 English</button>
+<button type='button' data-language-option='es'>🇪🇸 Español</button>
+</div>
+</div>
 <div class='quick-menu'>
 <button class='icon-menu-button' type='button' aria-label='Abrir links das frentes ONC' aria-expanded='false' aria-controls='service-links-menu' data-menu-toggle>
 <span></span>
@@ -28,54 +38,12 @@
 <a href='./mineracao-material-construcao.html'>Mineração e Material de Construção</a>
 </div>
 </div>
-<div class='language-picker'>
-<button class='language-button' type='button' aria-label='Trocar idioma' aria-expanded='false' aria-controls='language-options' data-language-toggle data-i18n-aria='languageButtonLabel'>
-<span data-language-current>🇧🇷 Português</span>
-</button>
-<div class='language-options' id='language-options'>
-<button type='button' data-language-option='pt-BR'>🇧🇷 Português</button>
-<button type='button' data-language-option='en'>🇺🇸 English</button>
-<button type='button' data-language-option='es'>🇪🇸 Español</button>
-</div>
-</div>
 </div>
 </div>
 </header>
 
 <main>
-<section id='inicio' class='group-hero'>
-<div class='group-hero-media'>
-<img src='./img/hero-embarcacao.jpeg' alt='Operação fluvial da ONC na Amazônia'>
-</div>
-<div class='group-hero-overlay'></div>
-<div class='container group-hero-content'>
-<div class='group-hero-copy'>
-<span class='eyebrow'>Grupo ONC</span>
-<h1>Soluções integradas para operação, transporte e fornecimento.</h1>
-<p>A ONC reúne frentes complementares para atender demandas navais, logísticas e de materiais com presença nacional, estrutura operacional e relacionamento direto com o cliente.</p>
-<div class='hero-actions'>
-<a href='#frentes' class='btn btn-primary'>Conhecer frentes</a>
-<a href='./sobre.html' class='btn btn-secondary'>Conheça nossa história</a>
-</div>
-</div>
-<aside class='group-hero-panel'>
-<strong>3 frentes de atuação</strong>
-<p>Um grupo organizado para responder com clareza a diferentes necessidades do mercado regional.</p>
-<div class='hero-stats'>
-<div>
-<span>Base</span>
-<strong>Iranduba-AM</strong>
-</div>
-<div>
-<span>Atuação</span>
-<strong>Naval, logística e insumos</strong>
-</div>
-</div>
-</aside>
-</div>
-</section>
-
-<section id='frentes' class='section fronts-section'>
+<section id='frentes' class='section fronts-section home-fronts'>
 <div class='container'>
 <div class='section-head'>
 <span class='eyebrow dark'>Frentes do grupo</span>

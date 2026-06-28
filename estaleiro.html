@@ -8,7 +8,7 @@
 <body>
 <header class='header'>
 <div class='container nav'>
-<a href='./index.html#inicio' class='logo' aria-label='Pagina inicial do Grupo ONC'>
+<a href='./index.html' class='logo' aria-label='Pagina inicial do Grupo ONC'>
 <img src='./img/logo-onc.jpeg' alt='Logo ONC'>
 <span class='logo-copy'>
 <strong>Grupo ONC</strong>
@@ -16,6 +16,16 @@
 </span>
 </a>
 <div class='header-actions'>
+<div class='language-picker'>
+<button class='language-button' type='button' aria-label='Trocar idioma' aria-expanded='false' aria-controls='language-options' data-language-toggle data-i18n-aria='languageButtonLabel'>
+<span data-language-current>🇧🇷 Português</span>
+</button>
+<div class='language-options' id='language-options'>
+<button type='button' data-language-option='pt-BR'>🇧🇷 Português</button>
+<button type='button' data-language-option='en'>🇺🇸 English</button>
+<button type='button' data-language-option='es'>🇪🇸 Español</button>
+</div>
+</div>
 <div class='quick-menu'>
 <button class='icon-menu-button' type='button' aria-label='Abrir links das frentes ONC' aria-expanded='false' aria-controls='service-links-menu' data-menu-toggle>
 <span></span>
@@ -26,16 +36,6 @@
 <a href='./estaleiro.html'>Estaleiro</a>
 <a href='./navegacao-logistica.html'>Navegação e Logística</a>
 <a href='./mineracao-material-construcao.html'>Mineração e Material de Construção</a>
-</div>
-</div>
-<div class='language-picker'>
-<button class='language-button' type='button' aria-label='Trocar idioma' aria-expanded='false' aria-controls='language-options' data-language-toggle data-i18n-aria='languageButtonLabel'>
-<span data-language-current>🇧🇷 Português</span>
-</button>
-<div class='language-options' id='language-options'>
-<button type='button' data-language-option='pt-BR'>🇧🇷 Português</button>
-<button type='button' data-language-option='en'>🇺🇸 English</button>
-<button type='button' data-language-option='es'>🇪🇸 Español</button>
 </div>
 </div>
 </div>
@@ -52,6 +52,7 @@
 <p data-i18n='heroText'>Projetos robustos para transporte fluvial, operações industriais e embarcações sob medida, com foco em confiança, segurança e desempenho.</p>
 <div class='hero-actions'>
 <a href='#contato' class='btn btn-primary' data-i18n='quoteButton'>Solicitar orçamento</a>
+<a href='./sobre.html' class='btn btn-secondary'>Conheça nossa história</a>
 <a href='#projetos' class='btn btn-secondary' data-i18n='projectsButton'>Ver projetos</a>
 </div>
 </div>
