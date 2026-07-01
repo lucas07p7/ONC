@@ -1096,6 +1096,12 @@ a{text-decoration:none;color:inherit}
   gap:20px;
 }
 
+.numbers-grid-compact{
+  max-width:820px;
+  margin:0 auto;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+
 .number-card{
   padding:30px;
   border-radius:26px;
@@ -1822,7 +1828,7 @@ a{text-decoration:none;color:inherit}
     min-width:0;
     padding:6px;
     gap:5px;
-    grid-template-columns:repeat(5,minmax(0,1fr));
+    grid-template-columns:repeat(3,minmax(0,1fr));
     transform:translateY(-8px);
   }
 
@@ -2079,6 +2085,328 @@ a{text-decoration:none;color:inherit}
   .quick-menu-panel a{
     padding:7px 10px;
     font-size:9px;
+  }
+}
+
+@media (max-width:760px){
+  html,
+  body{
+    overflow-x:hidden;
+  }
+
+  body{
+    font-size:15px;
+  }
+
+  .header{
+    position:sticky;
+    top:0;
+    box-shadow:0 10px 26px rgba(10,22,34,.08);
+  }
+
+  .container{
+    width:min(100% - 32px,1180px);
+  }
+
+  .logo,
+  .language-button,
+  .icon-menu-button,
+  .quick-menu-panel,
+  .language-options,
+  .btn,
+  .contact-list a,
+  .social-link{
+    -webkit-tap-highlight-color:transparent;
+  }
+
+  .language-button,
+  .icon-menu-button,
+  .quick-menu-panel a,
+  .language-options button,
+  .btn,
+  .contact-list a,
+  .social-link{
+    min-height:44px;
+  }
+
+  .quick-menu-panel,
+  .language-options{
+    top:68px;
+    left:16px;
+    right:16px;
+    border-radius:18px;
+    box-shadow:0 20px 42px rgba(10,22,34,.2);
+  }
+
+  .quick-menu-panel{
+    padding:8px;
+    gap:8px;
+  }
+
+  .quick-menu-panel a{
+    padding:10px 8px;
+    font-size:10px;
+    line-height:1.12;
+    letter-spacing:.02em;
+  }
+
+  .language-options{
+    padding:8px;
+  }
+
+  .language-options button{
+    font-size:12px;
+  }
+
+  .hero-copy h1,
+  .group-hero-copy h1,
+  .inner-hero-content h1{
+    font-size:34px;
+    line-height:1.05;
+    letter-spacing:0;
+  }
+
+  .hero-copy p,
+  .group-hero-copy p,
+  .inner-hero-content p{
+    font-size:16px;
+    line-height:1.55;
+  }
+
+  .hero-actions{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+    margin-top:24px;
+  }
+
+  .btn{
+    width:100%;
+    padding:0 18px;
+    border-radius:16px;
+    font-size:12px;
+    letter-spacing:.04em;
+  }
+
+  .section{
+    padding:58px 0;
+  }
+
+  .section-head h2,
+  .intro-grid h2,
+  .about-copy h2,
+  .contact-copy h2,
+  .detail-card h2,
+  .side-card h2{
+    font-size:28px;
+    line-height:1.12;
+    letter-spacing:0;
+  }
+
+  .section-head p,
+  .intro-grid p,
+  .about-copy p,
+  .feature-item p,
+  .contact-copy p,
+  .contact-card p,
+  .detail-card p,
+  .side-card p,
+  .detail-list li{
+    font-size:15px;
+    line-height:1.55;
+  }
+
+  .front-card{
+    min-height:300px;
+    border-radius:20px;
+  }
+
+  .front-card h3{
+    font-size:28px;
+    line-height:1.04;
+    letter-spacing:0;
+  }
+
+  .front-card p{
+    font-size:14px;
+    line-height:1.45;
+  }
+
+  .home-fronts .front-card{
+    min-height:170px;
+  }
+
+  .home-fronts .front-card h3{
+    font-size:23px;
+  }
+
+  .detail-card,
+  .side-card,
+  .contact-copy,
+  .contact-card,
+  .number-card,
+  .feature-item{
+    border-radius:20px;
+  }
+
+  .materials-operation,
+  .logistics-feature{
+    min-height:560px;
+    border-radius:22px;
+  }
+
+  .operation-copy h2{
+    font-size:30px;
+    line-height:1.08;
+    letter-spacing:0;
+  }
+
+  .operation-list li{
+    border-radius:14px;
+    font-size:13px;
+  }
+
+  .caption-gallery figcaption{
+    left:12px;
+    right:12px;
+    bottom:12px;
+    font-size:11px;
+    line-height:1.25;
+    letter-spacing:.04em;
+  }
+
+  .gallery-strip{
+    gap:14px;
+  }
+
+  .gallery-strip img{
+    height:220px;
+    border-radius:18px;
+  }
+
+  .contact-list a{
+    grid-template-columns:44px 1fr;
+    gap:12px;
+    padding:12px;
+    border-radius:16px;
+    overflow-wrap:anywhere;
+  }
+
+  .contact-icon{
+    width:44px;
+    height:44px;
+    border-radius:12px;
+  }
+
+  .contact-icon svg{
+    width:21px;
+    height:21px;
+  }
+
+  .contact-list a > span:last-child{
+    min-height:44px;
+  }
+
+  .map{
+    min-height:260px;
+    border-radius:18px;
+  }
+
+  .site-footer{
+    margin-top:16px;
+    padding-bottom:92px;
+  }
+
+  .footer-layout{
+    gap:22px;
+  }
+
+  .footer-brand img{
+    height:56px;
+  }
+
+  .footer-social{
+    justify-content:flex-start;
+  }
+
+  .floating-whatsapp{
+    left:16px;
+    right:16px;
+    bottom:12px;
+    justify-content:center;
+    min-height:50px;
+    padding:7px 14px;
+    border-radius:16px;
+  }
+}
+
+@media (max-width:420px){
+  .container{
+    width:min(100% - 24px,1180px);
+  }
+
+  .nav{
+    gap:6px;
+  }
+
+  .logo{
+    gap:8px;
+    padding-right:8px;
+  }
+
+  .language-button{
+    min-width:86px;
+    font-size:8px;
+  }
+
+  .quick-menu-panel,
+  .language-options{
+    top:64px;
+    left:12px;
+    right:12px;
+  }
+
+  .quick-menu-panel{
+    grid-template-columns:1fr;
+  }
+
+  .quick-menu-panel a{
+    font-size:11px;
+    padding:10px 12px;
+  }
+
+  .hero-copy h1,
+  .group-hero-copy h1,
+  .inner-hero-content h1{
+    font-size:30px;
+  }
+
+  .section-head h2,
+  .intro-grid h2,
+  .about-copy h2,
+  .contact-copy h2,
+  .detail-card h2,
+  .side-card h2{
+    font-size:25px;
+  }
+
+  .home-fronts .front-card h3,
+  .front-card h3{
+    font-size:24px;
+  }
+
+  .front-card{
+    min-height:270px;
+    padding:20px;
+  }
+
+  .home-fronts .front-card{
+    min-height:160px;
+  }
+
+  .floating-whatsapp{
+    left:12px;
+    right:12px;
   }
 }
 
